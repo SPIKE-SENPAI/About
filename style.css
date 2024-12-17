@@ -1,0 +1,115 @@
+/* Resetting some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Setting the background image */
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqK7J79lIKkE17djmB7pmMBRWQCJFMHO55yE_jq1hg130UyfuVr6BzEcs&s=10');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Adding some padding to the header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-out;
+}
+
+/* Styling the navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Styling the main sections */
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+.welcome img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.welcome img:hover {
+    transform: scale(1.05);
+}
+
+.highlight {
+    color: #ffc107;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.welcome, .about {
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.welcome {
+    animation-delay: 0.5s;
+}
+
+.about {
+    animation-delay: 1s;
+}
+
+/* Adding animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
